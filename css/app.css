@@ -1,0 +1,823 @@
+@font-face {
+    font-family: "NHaasGrotesk";
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/NHaasGroteskTXPro-55Rg.otf") format("opentype");
+    src: local("☺"),
+        url("../fonts/NHaasGroteskTXPro-55Rg.woff") format("woff"),
+        url("../fonts/NHaasGroteskTXPro-55Rg.eot") format("eot"),
+        url("../fonts/NHaasGroteskTXPro-55Rg.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Times Now";
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/TimesNow-ExtraLight.ttf") format("truetype");
+    src: local("☺"),
+        url("../fonts/TimesNow-ExtraLight.woff") format("woff"),
+        url("../fonts/TimesNow-ExtraLight.eot") format("eot"),
+        url("../fonts/TimesNow-ExtraLight.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Times Now";
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/TimesNow-Light.ttf") format("truetype");
+    src: local("☺"),
+        url("../fonts/TimesNow-Light.woff") format("woff"),
+        url("../fonts/TimesNow-Light.eot") format("eot"),
+        url("../fonts/TimesNow-Light.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Times Now";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TimesNow-SemiLight.ttf") format("truetype");
+    src: local("☺"),
+        url("../fonts/TimesNow-SemiLight.woff") format("woff"),
+        url("../fonts/TimesNow-SemiLight.eot") format("eot"),
+        url("../fonts/TimesNow-SemiLight.svg") format("svg");
+}
+
+body, html{
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: #231f20;
+}
+
+a.button{
+  display: inline-block;
+  font-family: "Times Now", "Times New Roman", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 0.9375rem;
+  border: solid 1px #231f20;
+  padding: 0.9375rem 1.875rem;
+  margin-top: 2.5rem;
+}
+
+a.button:hover{
+  background: #231f20;
+  color: #fff;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img, video{
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
+hr{
+  border-top: solid 1px #231f20;
+  border-bottom: 0;
+}
+
+h2,h3,h4,h5,h6, .cart a svg text{
+  font-family: "NHaasGrotesk", 'Helvetica', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #231f20;
+  line-height: 1;
+}
+
+h3{
+  font-family: "Times Now", "Times New Roman", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2.125rem;
+  margin: 0;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+p, li{
+  font-family: "Times Now";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  margin: 0;
+  letter-spacing: normal;
+  line-height: 1.35;
+  color: #231f20;
+}
+
+button, button:focus, button:hover{
+  -webkit-appearance: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+::selection{
+  background: #002ea7;
+  color: #fff;
+}
+
+.show-for-large-only{
+  display: block;
+}
+
+.show-for-small-only{
+  display: none;
+}
+
+.row{
+  position: relative;
+  max-width: 2000px;
+  display: block;
+  margin: 0 auto;
+  padding: 2.813rem 1.563rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+
+.row.full{
+  max-width: none;
+}
+
+.row.collapse .columns:first-child{
+  padding-right: 0;
+}
+
+.row.collapse .columns:last-child{
+  padding-left: 0;
+}
+
+.flex{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.large-15{
+  width: 15%;
+  float: left;
+}
+
+.large-33{
+  width: 33.33%;
+  float: left;
+}
+
+.large-50{
+  width: 50%;
+  float: left;
+}
+
+.large-70{
+  width: 70%;
+  float: left;
+}
+
+.large-75{
+  width: 75%;
+  float: left;
+}
+
+.large-50.float-right{
+  float: right;
+}
+
+.large-25{
+  width: 25%;
+  float: left;
+}
+
+.large-100{
+  width: 100%;
+}
+
+.columns{
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  box-sizing: border-box;
+}
+
+.large-centered{
+  margin: 10rem auto;
+  display: block;
+  float: none;
+}
+
+.nav-bar{
+  background: #ffffff;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 2rem 3.125rem;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 998;
+}
+
+.row.nav-bar{
+  margin: 0 auto;
+}
+
+.cart a{
+  width: 1.75rem;
+  cursor: pointer;
+}
+
+.cart a:hover svg text{
+  fill: red;
+}
+
+/* Hamburger Menu*/
+.hamburger {
+  align-self: center;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  z-index: 10;}
+
+.hamburger-box {
+  width: 2.5rem;
+  height: auto;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 2.5rem;
+    height: 2px;
+    background-color: #231f20;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .nav-bar.menu .hamburger-inner, .nav-bar.menu .hamburger-inner::before, .nav-bar.menu .hamburger-inner::after{
+    background: #231f20;
+  }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -0.625rem; }
+  /*.hamburger-inner::after {
+    bottom: -10px; }*/
+
+    .hamburger--squeeze .hamburger-inner {
+      transition-duration: 0.075s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      .hamburger--squeeze .hamburger-inner::before {
+        transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+      .hamburger--squeeze .hamburger-inner::after {
+        transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+    .hamburger--squeeze.is-active{
+      margin-top: -10px;
+    }
+    .hamburger--squeeze.is-active .hamburger-inner {
+      transform: rotate(45deg);
+      transition-delay: 0.12s;
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+      .hamburger--squeeze.is-active .hamburger-inner::before {
+        top: 0;
+        opacity: 0;
+        transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+      .hamburger--squeeze.is-active .hamburger-inner::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+/* //End Hamburger Menu*/
+
+h1, h1 a, h4, .nav a, .nav span, h2, .product a, .post a {
+  font-family: "NHaasGrotesk", "Helvetica", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  letter-spacing: -0.25px;
+}
+
+h2 span{
+  font-family: 'Times Now';
+  font-weight: 200;
+  font-style: normal;
+  text-transform: none;
+}
+
+h4, .post a p{
+  text-transform: none;
+}
+
+nav.nav{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4rem);
+  z-index: 999;
+  background: #ffffff;
+  color: #231f20;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 3.125rem 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+nav.nav.open{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.nav a, .nav span{
+  margin: 0 auto;
+  color: #231f20;
+}
+
+.margin-top{
+  margin-top: 5rem;
+}
+
+.links{
+  width: 100%;
+}
+
+.links ul{
+  margin-top: 2rem;
+}
+
+.links ul li a{
+  display: block;
+  border-bottom: solid 1px #231f20;
+  padding: 0.5rem 0;
+  width: calc(100% - 6.25rem);
+}
+
+.links ul li a span{
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Times Now", "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  vertical-align: top;
+  text-transform: uppercase;
+  width: 5rem;
+}
+
+span.year{
+  text-align: right;
+  margin-right: 4.375rem;
+}
+
+span.title{
+  text-align: left;
+  margin-left: 4.375rem;
+}
+
+.credit h2{
+  font-size: 0.9375rem;
+}
+
+.cta{
+  position: fixed;
+  z-index: 99;
+  right: 3.125rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cta a{
+  width: 5rem;
+  height: 5rem;
+  border: solid 1px #231f20;
+  border-radius: 50%;
+  font-family: "Times Now", "Times New Roman", serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  font-size: 2.125rem;
+  line-height: .9;
+  padding: 2rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.cta a:hover{
+  background: #231f20;
+  color: #fff;
+}
+
+.main-info {
+  text-align: center;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.main-info p{
+  margin: 2.5rem auto;
+}
+
+.contributors ul li{
+  display: inline-block;
+}
+
+.contributors h4, .product a p.p-sub, .info h4, h2.price span, .post a p.type, .story h2 span{
+  font-family: "NHaasGrotesk";
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+}
+
+.contributors h3, .contributors h4, .post a p.type{
+  display: inline-block;
+}
+
+.contributors ul li:last-child span{
+  display: none;
+}
+
+.product a, .post a{
+  text-align: center;
+  text-transform: none;
+  padding: 3.125rem 2rem;
+}
+
+.product a p{
+  padding: 0 5rem;
+}
+
+.product a p.p-sub{
+  display: block;
+  margin: 0.5rem auto 0.25rem auto;
+}
+
+.product-info{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.info p, .info h4, ul.features, h2.price{
+  padding: 0.625rem 3rem;
+}
+
+h2.price span{
+  vertical-align: top;
+  margin: 0;
+}
+
+.info a.button{
+  margin: 2rem 0.75rem;
+}
+
+.post a img{
+  margin-bottom: 1.25rem;
+}
+
+.post a p:last-child{
+  margin-top: 0.5rem;
+}
+
+.post-padding a img{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  box-sizing: border-box;
+}
+
+.post.feature a{
+  font-family: "Times Now", "Times New Roman", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2.125rem;
+  margin: 0;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.story h2{
+  font-size: 3.75rem;
+  text-align: center;
+}
+
+.story p{
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.story h2 span{
+  margin-right: 0.5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .medium-100{
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .medium-75{
+    width: 75%;
+    margin: 1rem 0;
+  }
+
+  .medium-25{
+    width: 25%;
+  }
+
+  .medium-50{
+    width: 50%;
+  }
+
+  .medium-centered{
+    margin: 5rem auto;
+    display: block;
+    float: none;
+  }
+
+  .medium-100 .medium-75, .medium-100 .large-75{
+    float: right;
+  }
+
+  main.row {
+    padding-top: 7rem;
+  }
+
+  .cta {
+    right: 1.875rem;
+    top: 20%;
+  }
+
+  .product-info{
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .journal.margin-top{
+    margin-top: 0;
+  }
+
+  .columns {
+    padding-left: 1.562rem;
+    padding-right: 1.562rem;
+  }
+
+  .row .row, .product a, .post a{
+    padding: 1.562rem 0;
+  }
+
+  .main-info {
+    padding: 0 5rem;
+  }
+}
+/* End Tablet */
+
+/* Smartphone */
+@media screen and (max-width: 39.9375em){
+  h3{
+    font-size: 1.75rem;
+  }
+
+  a.button{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .hide-for-small-only, .show-for-large-only, .contributors ul li h3 span{
+    display: none;
+  }
+
+  .show-for-small-only{
+    display: block;
+  }
+
+  .small-50{
+    width: 50%;
+    float: left;
+  }
+
+  .small-100{
+    width: 100%;
+    float: none;
+  }
+
+  .small-centered{
+    margin: 5rem auto;
+    display: block;
+    float: none;
+  }
+
+  .row{
+    padding: 1rem 0;
+  }
+
+  .nav-bar{
+    padding: 1.563rem;
+  }
+
+  h1, h1 a, h4, .nav a, .nav span, h2, h3 span, .post a, .product a{
+    font-size: 1.5rem;
+  }
+
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    width: 2rem;
+  }
+
+  nav.nav{
+    height: calc(100% - 3.5rem);
+    padding: 0 0 3.125rem 0;
+    overflow: scroll;
+  }
+
+  .row.collapse .columns:first-child {
+    padding-right: 1.563rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+  .row.collapse .columns:last-child {
+    padding-left: 1.563rem;
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .links{
+    margin-bottom: 2rem;
+  }
+
+  .links ul li a{
+    width: calc(100% - 3.125rem);
+  }
+
+  span.year {
+    margin-right: 0.75rem;
+  }
+
+  span.title {
+    margin-left: 0.75rem;
+  }
+
+  main.row {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .main-info p {
+    padding: 0 2rem;
+  }
+
+  .contributors ul li{
+    display: block;
+  }
+
+  .cta {
+    width: calc(100% - 3.124rem);
+    right: auto;
+    top: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+    bottom: 1rem;
+    left: 1.562rem;
+}
+
+  .cta a {
+    width: 100%;
+    height: 1.5rem;
+    border: none;
+    border-radius: 0;
+    background-color: #231f20;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+  .products{
+    margin-top: 3.125rem;
+  }
+
+  .post a, .post.feature a{
+    margin-bottom: 3.125rem;
+  }
+
+
+  .product-info{
+    flex-direction: column;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+
+  .slick-next {
+    right: 0;
+    z-index: 2;
+  }
+
+  .slick-prev {
+    left: 0;
+    z-index: 2;
+  }
+
+  .info{
+    padding: 3.125rem 2rem;
+  }
+
+  .info p, .info h4, ul.features, h2.price {
+    padding: 0.625rem 0;
+  }
+
+  h2.price{
+    margin: 1rem auto;
+  }
+
+  .info a.button {
+    margin: 0.5rem 0;
+  }
+
+  .post-padding a img{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .journal.margin-top{
+    margin-top: 0;
+  }
+
+  .row .row, .product a, .post a{
+    padding: 0.781rem 0;
+  }
+
+  .row .large-50:last-child img{
+    margin-top: 1.562rem;
+  }
+
+  .story h2 {
+    font-size: 1.75rem;
+  }
+
+  .columns {
+    padding-left: 1.562rem;
+    padding-right: 1.562rem;
+  }
+
+  .row.main-info{
+    padding: 1rem 2rem;
+  }
+
+  .post.feature a{
+    font-size: 1.75rem;
+  }
+}
+/* End Smartphone */
