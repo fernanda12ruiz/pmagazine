@@ -109,7 +109,7 @@ h3{
   line-height: 1.1;
 }
 
-p, li{
+p, li, .submissions p a, .about span{
   font-family: "Times Now";
   font-weight: 400;
   font-style: normal;
@@ -217,9 +217,9 @@ button, button:focus, button:hover{
 }
 
 .large-centered{
-  margin: 10rem auto;
   display: block;
   float: none;
+  margin: 0 auto;
 }
 
 .nav-bar{
@@ -334,7 +334,7 @@ h1, h1 a, h4, .nav a, .nav span, h2, .product a, .post a {
   letter-spacing: -0.25px;
 }
 
-h2 span{
+h2 span, p span{
   font-family: 'Times Now';
   font-weight: 200;
   font-style: normal;
@@ -467,7 +467,7 @@ span.title{
   display: inline-block;
 }
 
-.contributors h4, .product a p.p-sub, .info h4, h2.price span, .post a p.type, .story h2 span{
+.contributors h4, .product a p.p-sub, .info h4, h2.price span, .post a p.type, .story h2 span, .submissions a, .submissions h5{
   font-family: "NHaasGrotesk";
   font-weight: 200;
   font-style: normal;
@@ -534,7 +534,7 @@ h2.price span{
   box-sizing: border-box;
 }
 
-.post.feature a{
+.post.feature a, .s-title a{
   font-family: "Times Now", "Times New Roman", serif;
   font-weight: 200;
   font-style: normal;
@@ -556,6 +556,55 @@ h2.price span{
 
 .story h2 span{
   margin-right: 0.5rem;
+}
+
+.submissions p, .submissions h2, .submissions h5, .submissions a{
+  text-align: center;
+}
+
+.submissions h5{
+  margin-bottom: 0;
+}
+
+.submissions a{
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.submissions p a{
+  display: inline-block;
+  text-transform: none;
+  margin-top: 1rem;
+}
+
+.submissions a:hover{
+  text-decoration: underline;
+}
+
+.s-title a{
+  text-transform: none;
+  font-style: italic;
+}
+
+.about h5{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.about p{
+  margin-bottom: 1rem;
+}
+
+.about span{
+  font-size: 0.9375rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.about p a{
+  margin-top: 0;
+  font-style: italic;
 }
 
 /* Tablet */
