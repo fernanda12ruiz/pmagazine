@@ -5,8 +5,7 @@
     src: url("../fonts/NHaasGroteskTXPro-55Rg.otf") format("opentype");
     src: local("☺"),
         url("../fonts/NHaasGroteskTXPro-55Rg.woff") format("woff"),
-        url("../fonts/NHaasGroteskTXPro-55Rg.eot") format("eot"),
-        url("../fonts/NHaasGroteskTXPro-55Rg.svg") format("svg");
+        url("../fonts/NHaasGroteskTXPro-55Rg.eot") format("eot");
 }
 
 @font-face {
@@ -16,8 +15,7 @@
     src: url("../fonts/TimesNow-ExtraLight.ttf") format("truetype");
     src: local("☺"),
         url("../fonts/TimesNow-ExtraLight.woff") format("woff"),
-        url("../fonts/TimesNow-ExtraLight.eot") format("eot"),
-        url("../fonts/TimesNow-ExtraLight.svg") format("svg");
+        url("../fonts/TimesNow-ExtraLight.eot") format("eot");
 }
 
 @font-face {
@@ -27,8 +25,7 @@
     src: url("../fonts/TimesNow-Light.ttf") format("truetype");
     src: local("☺"),
         url("../fonts/TimesNow-Light.woff") format("woff"),
-        url("../fonts/TimesNow-Light.eot") format("eot"),
-        url("../fonts/TimesNow-Light.svg") format("svg");
+        url("../fonts/TimesNow-Light.eot") format("eot");
 }
 
 @font-face {
@@ -38,8 +35,7 @@
     src: url("../fonts/TimesNow-SemiLight.ttf") format("truetype");
     src: local("☺"),
         url("../fonts/TimesNow-SemiLight.woff") format("woff"),
-        url("../fonts/TimesNow-SemiLight.eot") format("eot"),
-        url("../fonts/TimesNow-SemiLight.svg") format("svg");
+        url("../fonts/TimesNow-SemiLight.eot") format("eot");
 }
 
 body, html{
@@ -562,10 +558,6 @@ h2.price span{
   text-align: center;
 }
 
-.submissions h5{
-  margin-bottom: 0;
-}
-
 .submissions a{
   display: block;
   margin: 0.5rem auto;
@@ -605,6 +597,10 @@ h2.price span{
 .about p a{
   margin-top: 0;
   font-style: italic;
+}
+
+.about p:last-child{
+  opacity: .5;
 }
 
 /* Tablet */
