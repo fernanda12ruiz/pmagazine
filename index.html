@@ -2,144 +2,199 @@
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta property="og:url" content="http://www.monumento.co" />
+    <meta property="og:url" content="http://www.glennsfarmers.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="P MAGAZINE" />
-    <meta property="og:description" content="P Magazine is a hardcover limited edition art book published annually as a collector’s edition with exclusive photography and content created by the finest contributors across the globe. P Magazine manifests different expressions of beauty, sensuality and human nature." />
+    <meta property="og:title" content="Glenns Farmers" />
+    <meta property="og:description" content="Glenns Farmers Description" />
     <meta property="og:image" content="images/meta-img.jpg" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P Magazine</title>
+    <title>Glenn's Farmers</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-<!-- Nav -->
-    <div class="row full flex nav-bar">
-      <button class="hamburger hamburger--squeeze" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+    <div class="curtain"></div>
+    <div class="navigation slide-down-bar">
+      <nav>
+        <button class="hamburger hamburger--squeeze show-for-small" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-      <h1>
-        <a href="index.html">
-          P Magazine
-        </a>
-      </h1>
+        <ul class="left">
+          <li><a href="about.html">About</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="cta show-for-small"><a href="shop.html">Shop</a></li>
+        </ul>
 
-      <div class="cart">
-        <a href="#">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
-          <style type="text/css">
-          	.st0{fill:none;stroke:#231F20;stroke-width:3;stroke-miterlimit:10;}
-          	.st1{font-family: "NHaasGrotesk", 'Helvetica', sans-serif;}
-          	.st2{font-size:34px;}
-          </style>
-          <rect x="2.5" y="20" class="st0" width="65" height="45.8"/>
-          <polyline class="st0" points="20.4,20 20.4,4.2 49.6,4.2 49.6,20 "/>
-          <text transform="matrix(1 0 0 1 24.2563 54.4814)" class="st1 st2">0</text>
-          </svg>
-        </a>
-      </div>
+        <a href="index.html" class="logo"><img src="images/logo.svg"></a>
+
+        <ul class="right hide-for-small">
+          <li class="cta"><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart (0)</a></li>
+        </ul>
+
+        <a href="cart.html" class="show-for-small">Cart (0)</a>
+      </nav>
     </div>
 
-    <nav class="nav flex">
-      <div class="top links">
-        <a href="shop.html">SHOP</a>
-        <a href="journal.html">JOURNAL</a>
-        <a href="about.html">ABOUT</a>
-        <a href="submissions.html">SUBMISSIONS</a>
-
-        <ul>
-          <li><a href="#"><span class="year">MMXIII</span>P Nº1<span class="title">RAW</span></a></li>
-          <li><a href="#"><span class="year">MMXIII</span>P Nº2<span class="title">WARM</span></a></li>
-          <li><a href="#"><span class="year">MMXIII</span>P Nº3<span class="title">INTIMACY</span></a></li>
-          <li><a href="#"><span class="year">MMXIII</span>P Nº4<span class="title">NATURAL</span></a></li>
-          <li><a href="#"><span class="year">MMXIII</span>P Nº5<span class="title">ETERNAL</span></a></li>
-          <li><a href="#"><span class="year">MMXIII</span>P Nº6<span class="title">MAGIC</span></a></li>
-        </ul>
-      </div>
-
-      <div class="bottom">
-        <div class="credit">
-          <h2>A project by Monumento</h2>
+    <section id="main" class="fullheight slide-up-fade-in">
+      <div class="modulo parallax flex" data-parallax-speed="1" style="background-image:url('images/01-bg01.png');background-position:center;background-size:cover;background-repeat:no-repeat;">
+        <div class="hide-for-small hide-for-medium modulo-inner parallax" data-parallax-speed="2" style="background-image:url('images/01-bg02.png');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+        <div class="show-for-small show-for-medium modulo-inner" style="background-image:url('images/atf-mobile.png');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+        <div class="row">
+          <div class="large-75 large-centered small-100 columns">
+            <h1 data-parallax-speed="2">You'll<br>want this<br>heat</h1>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
 
-<!-- Projects Grid -->
-  <main class="row">
-    <div class="cta">
-      <a href="shop.html">
-        Shop Now
-      </a>
-    </div>
-
-    <div class="large-100 small-100 columns">
-      <div class="video hide-for-small-only">
-        <video id="video" poster="images/hero.jpg" autoplay="true" muted loop>
-          <source src="images/video.mp4" type="video/mp4">
-          <!--<source src="video/video.webm" type="video/webm">-->
-        </video>
-        <script>
-            document.getElementById('video').play();
-        </script>
+    <section id="introAbout" class="fullheight">
+      <div class="modulo parallax flex flex-column" data-parallax-speed="1" style="background-image:url('images/02-bg02.png');background-position:center;background-size:cover;background-repeat:no-repeat;">
+        <div class="hide-for-small hide-for-medium modulo-inner parallax" data-parallax-speed="2" style="background-image:url('images/02-bg01.png');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+        <div class="show-for-small show-for-medium modulo-inner parallax" data-parallax-speed="2" style="background-image:url('images/atf2-mobile.png');background-position:center;background-size:cover;background-repeat:no-repeat;"></div>
+        <div class="row">
+          <div class="large-50 medium-75 large-centered small-100 columns">
+            <h2 class="yellow">Since<br>1992</h2>
+            <p class="text-center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="large-50 medium-75 large-centered small-100">
+              <a href="about.html" class="button red text-center">Read More about Us</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="show-for-small-only">
-        <img src="images/mobile-vid.gif" alt="">
-      </div>
-    </div>
+    </section>
 
-    <div class="row main-info">
-      <h2>P Nº6</h2>
-      <h2>Magic <span>— The Sixth Book</span></h2>
-
-      <p>An extraordinary power, mysterious and hypnotic, that shifts our perception of what’s real and what’s beyond our understanding.<br>
-        A supernatural influence which leads us to believe that anything is possible. It means letting go, immersing yourself into the feeling of total freedom, of wonderfulness.</p>
-
-      <div class="contributors">
-        <h4>On the Cover,</h4>
-        <h3>Bambi Northwood Blyth by Jennifer Stenglein</h3>
-        <ul>
-          <li><h3>AdeY <span>/</span></h3></li>
-          <li><h3>Ali Mitton <span>/</span></h3></li>
-          <li><h3>Ana Montiel <span>/</span></h3></li>
-          <li><h3>Bastiaan Woudt <span>/</span></h3></li>
-          <li><h3>Darren Ankenman <span>/</span></h3></li>
-          <li><h3>Dennis Stenild <span>/</span></h3></li>
-          <li><h3>Dylan Forsberg <span>/</span></h3></li>
-          <li><h3>Igor Pavlov <span>/</span></h3></li>
-          <li><h3>Julien Pounchou <span>/</span></h3></li>
-          <li><h3>Mariana García <span>/</span></h3></li>
-          <li><h3>Michael Donovan <span>/</span></h3></li>
-          <li><h3>Pamela Hanson <span>/</span></h3></li>
-          <li><h3>Sam Livm <span>/</span></h3></li>
-          <li><h3>Violeta Hernández <span>/</span></h3></li>
-          <li><h3>Curated by Monumento.Co <span>/</span></h3></li>
-        </ul>
+    <section id="introShop" class="fullheight">
+      <div class="modulo flex flex-column">
+        <div class="row">
+          <div class="large-50 medium-75 large-centered small-100 columns">
+            <h2 class="green parallax" data-parallax-speed="0">Shop your favorites</h2>
+          </div>
+        </div>
+        <div class="row intro-prods flex">
+          <div class="large-50 medium-75 small-100 flex columns">
+            <a class="product parallax text-center" href="product.html" data-parallax-speed=".25">
+              <img src="images/product01.png" alt="">
+              <span>4oz Bottle<br>
+              <b>$0.00 MXN</b></span>
+            </a>
+            <a class="product parallax text-center" href="product.html" data-parallax-speed=".25">
+              <img src="images/product02.png" alt="">
+              <span>4oz Bottle<br>
+              <b>$0.00 MXN</b></span>
+            </a>
+            <a class="product parallax text-center" href="product.html" data-parallax-speed=".25">
+              <img src="images/product03.png" alt="">
+              <span>4oz Bottle<br>
+              <b>$0.00 MXN</b></span>
+            </a>
+          </div>
+        </div>
+          <a href="shop.html" class="text-center button green parallax" data-parallax-speed="0">View All Products</a>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
-      <div class="large-100 small-100 columns">
-        <img src="images/spread01.jpg" alt="">
+    <section id="introBusiness" class="fullheight blue">
+      <div class="modulo parallax flex flex-column" data-parallax-speed=".5" style="background-image:url('images/03-bg01.png');background-position:0 -50%;background-size:35%;background-repeat:no-repeat;">
+        <div class="row">
+          <div class="large-50 large-centered medium-75 small-100 columns">
+            <div class="hide-for-small modulo-inner parallax" data-parallax-speed="1.5" style="background-image:url('images/03-bg02.png');background-position:110% 200%;background-size:35%;background-repeat:no-repeat;"></div>
+            <h2 class="white parallax" data-parallax-speed="0">Serve your customers right</h2>
+            <p class="text-center text-white">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="large-50 large-centered small-100">
+              <a href="about.html" class="text-center button white parallax" data-parallax-speed="0">Grow your Business</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
-      <div class="large-50 small-100 columns">
-        <img src="images/half-spread1.jpg" alt="">
+    <section id="introRecipes" class="fullheight">
+      <div class="modulo flex flex-column">
+        <div class="row">
+          <div class="large-50 large-centered medium-75 small-100 columns">
+            <h3 class="red parallax" data-parallax-speed="0">Glenn's<br>Favorite<br>Recipes</h3>
+          </div>
+          <div class="row flex recipes">
+            <div class="large-50 small-100 columns">
+              <a href="recipe.html" class="text-center">
+                <img src="images/recipe01.jpg" alt="">
+                <span>Minted Watermelon and Eclipses™ Tomato Salad</span>
+              </a>
+            </div>
+            <div class="large-50 small-100 columns">
+              <a href="recipe.html" class="text-center">
+                <img src="images/recipe02.jpg" alt="">
+                <span>Minted Watermelon and Eclipses™ Tomato Salad</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="large-50 small-100 columns">
-        <img src="images/half-spread2.jpg" alt="">
+    </section>
+
+    <section id="introContact" class="fullheight yellowbg">
+      <div class="modulo parallax flex flex-column" data-parallax-speed=".5" style="background-image:url('images/04-bg01.png');background-position:center;background-size:cover;background-repeat:no-repeat;">
+        <div class="row">
+          <div class="large-50 medium-75 large-centered small-100 columns">
+            <h2 class="white">Questions?<br>Reach out.</h2>
+            <p class="text-center">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="large-50 medium-75 large-centered small-100">
+              <a href="contact.html" class="button blue text-center">Contact Us</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="row flex">
+        <div class="large-20 columns hide-for-small">
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="large-20 small-100 columns">
+          <ul>
+            <li><a href="shipping.html">Shipping & Returns</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="large-20 small-100 columns logo">
+          <a href="index.html">
+            <img src="images/footer-logo.svg" alt="">
+          </a>
+        </div>
+        <div class="large-20 small-100 columns">
+          <p><span>FOLLOW US</span></p>
+          <ul>
+            <li><a href="" target="_blank">Facebook</a></li>
+            <li><a href="" target="_blank">Twitter</a></li>
+            <li><a href="" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="large-20 small-100 columns">
+          <p>California 115 N, L1 Col. Del Valle, Plaza Mediterráneo Obregón, Sonora
+            <br><br><span>+52 1 (686)1234 5678</span>
+          </p>
+        </div>
+      </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/jquery.scrollify.min.js"></script>
     <script src="js/app.js"></script>
   </body>
-</html> 
+</html>
